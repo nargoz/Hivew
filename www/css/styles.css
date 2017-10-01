@@ -1,0 +1,125 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 0;
+    padding: 0; 
+}
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+.size-22 { font-size: 22px }
+.size-25 { font-size: 25px }
+.size-29 { font-size: 29px }
+.size-50 { font-size: 50px }
+
+
+.row-full .f7-icons  {
+color:white;
+
+}
+ .active {
+color:orange;
+}
+
+.riassunto p {
+
+	font-size: 20px;
+
+}
+
+.row-full ul li {
+	 display: inline;
+	 margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+table a {
+color:#000;
+}
+
+ .row-full{
+  width:100%;
+ position: fixed;
+
+ bottom:2;
+ margin-left: -50vw;
+ height: 60px;
+
+ left: 50%;
+ background-color: #58585a;
+}
+
+.row-progress {
+  width:100%;
+ position: absolute;
+
+ bottom:4;
+ margin-left: -50vw;
+ height: 60px;
+color:#000;
+ left: 50%;
+ background-color: #ffc50c;
+}
+.row-progress a {
+	color:#000;
+	font-size: 25 px;
+font-weight:bold;
+}
+.row-progress ul li {
+	 display: inline;
+	 margin: 10px;
+padding: 0;
+list-style-type: none;
+font-size: 15 px;
+font-weight:bold;
+color:#000;
+text-align:left;
+}
+
+
+.row-full-w ul li {
+	 display: inline;
+	 margin: 10px;
+padding: 0;
+list-style-type: none;
+font-size: 15 px;
+font-weight:bold;
+color:#000;
+text-align:left;
+}
+
+.row-full-w a {
+
+font-weight:bold;
+color:#000;
+text-align:left;
+}
+
+ .row-full-w{
+  width:100%;
+ position: absolute;
+color:#000;
+ top:2;
+ margin-left: -50vw;
+ height: 55px;
+
+ left: 50%;
+ background-color: white;
+}

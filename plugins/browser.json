@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.promotion.hivewish"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.promotion.hivewish"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.promotion.hivewish"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.promotion.hivewish"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.promotion.hivewish"
+        },
+        "cordova-plugin-flashlight": {
+            "PACKAGE_NAME": "com.promotion.hivewish"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.promotion.hivewish"
+        },
+        "cordova-plugin-photo-library": {
+            "PACKAGE_NAME": "com.promotion.hivewish"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.promotion.hivewish"
+        }
+    }
+}

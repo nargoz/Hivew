@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Your app title -->
+    <title>Hivewish</title>
+
+  
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+	<link rel="stylesheet" href="css/framework7-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+	
+	<script type="text/javascript">
+document.addEventListener( 'deviceready', onDeviceReady.bind( this ), false );
+
+    function onDeviceReady() {
+
+
+	}
+	
+
+	
+	
+	</script>
+	
+
+</head>
+
+<body>
+
+
+ <!-- Views -->
+    <div class="views">
+<!-- View -->
+      <div class="view view-main">
+                <!-- Pages -->
+					<div class="pages">
+			
+			
+			  <!--************************** INDEX / LOGIN *********************** -->
+			
+                <div  class="page" data-page="index">
+                 
+				   
+                    <div  class="page-content">
+                        
+						
+						<form>
+						<div class="content-block-title"><center><img src="img/logo.png"></center></br></br></div>
+						<div class="list-block">
+						  <ul>
+						 
+							<li>
+							  <div class="item-content">
+								<div class="item-media"><i class="icon f7-icons">email</i></div>
+								<div class="item-inner">
+								  <div class="item-title label">Username</div>
+								  <div class="item-input">
+									<input type="text" id ="userlogin" value="andrea" >
+								  </div>
+								</div>
+							  </div>
+							</li>
+							
+							   <!-- Text inputs -->
+							<li>
+							  <div class="item-content">
+								<div class="item-media"><i class="icon f7-icons">lock</i></div>
+								<div class="item-inner">
+								  <div class="item-title label">Password</div>
+								  <div class="item-input">
+									<input type="password" id="pswlogin" value="test">
+								  </div>
+								</div>
+							  </div>
+							</li>
+						   <br/><br/>
+						 <a href ="#" onclick="login();" class="button button-fill color-orange">Entra</a>
+						  </ul>
+						  
+						</div>
+						</form>
+
+                        <p>Non sei registrato? <a href ="#registrati"> Registrati ora! </a></p>
+							
+
+                       
+                    </div>
+			
+                </div>
+			
+<!--************************** INSIDE *********************** -->
+			
+			<div  class="page cached" data-page="inside">
+           
+
+          <div   class="page-content">
+			<div  class="row-full-w">
+			<ul>
+				<li><a href="#listawish" >  WISH </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>     
+				<li><a href="#listawishlist" >  WISHLIST </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </li>
+				<li><a href="#tab4" >   LISTE </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			</ul>
+			</div>
+		  
+		  <div class="content-block-title">
+		  </br></br></br>
+
+			<center><img src="img/logo.png"></br></br>
+			<h2>Benvenuto su Hivewish</h2><p><b>L'alveare dei desideri</b></p></center>
+			</div>
+			</br>
+			<center><img src="img/gift.png" /></center></br></br></br></br></br></br>
+		  
+            
+			
+			
+			<div  class="row-full">
+			<center>
+			<ul>
+				<li><a href="#inside" ><i class="f7-icons size-29 active">home</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href ="#addwish">  <i class="f7-icons size-29">add_round</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>     
+				<li><a href="#tab3" ><i class="f7-icons size-29">bell</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="#tab4" ><i class="f7-icons size-29">person</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>		
+			</ul>
+			</center>
+			</div>
+			
+</div>
+          
+  
+   
+        </div>
+		
+		<!--************************** REGISTRATI *********************** -->
+		
+		    <div  class="page cached" data-page="registrati">
+      
+			
+			  <div class="navbar">
+                <div class="navbar-inner">
+                 
+                    <div class="center sliding">Registrati</div>
+                    <div class="right">
+                    
+                    </div>
+                </div>
+            </div>
+			
+			
+            
+  
+                    <div  data-role="content" class="page-content">
+                        <div class="content-block">
+						<center>
+						<form>
+						<div class="content-block-title"><center><img src="img/logo.png"></center></br></br></div>
+<div class="list-block">
+  <ul>
+
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">person</i></div>
+        <div class="item-inner">
+          <div class="item-title label">Username</div>
+          <div class="item-input">
+            <input type="text" id="user">
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">email</i></div>
+        <div class="item-inner">
+          <div class="item-title label">E-mail</div>
+          <div class="item-input">
+            <input type="email" id="email" >
+          </div>
+        </div>
+      </div>
+    </li>
+    
+	
+	     <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">lock</i></div>
+        <div class="item-inner">
+          <div class="item-title label">Password</div>
+          <div class="item-input">
+            <input type="password" id="psw">
+          </div>
+        </div>
+      </div>
+    </li>
+	
+
+</ul>
+   <br/><br/>
+ <a href="#" onclick="registrati();" class="button button-fill color-orange">Registrati</a>
+
+
+  
+</div>
+						</form>
+                        <p>Sei gi&agrave; registrato? <a href="#index"> Entra qui! </a></p>
+							
+						</center>
+                          
+                        </div>
+                    </div>
+   
+           
+          
+
+        
+    </div>
+		
+		
+		
+		<!--************************** ADD WISH *********************** -->
+		
+		
+		        <div class="page cached" data-page="addwish">
+            
+          <!-- Top Navbar-->
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="center"><b>PUNTA,SCATTA,REGALA</b></div>
+            </div>
+          </div>
+		  
+
+		  
+          <!-- /End of Top Navbar-->
+ 
+<div class="page-content">
+
+		   <br/><br/>
+		 
+			<img id ="img_camPH" border="1" width="100%"/>
+			
+		  <center>
+		  <br/><br/>
+           &nbsp;&nbsp;&nbsp;&nbsp;<input id="btn_library" type="image" src="img/library.png"> <input id="btn_camera" type="image" src="img/scatta.png"> <input id="btn_flash" type="image" src="img/flash.png"> 
+			 <input id="btn_refuse" type="image" src="img/refuse.png">
+		
+			<br/><br/>
+<div class="row-progress">		
+<ul>
+<li><a href="#inside"><i class="icon f7-icons">left</i> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>1/6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>     
+<li><a onclick="acceptImage();" > <i class="icon f7-icons">right</i> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>
+
+</ul>
+</div>
+			</center>
+         
+            
+   
+        </div>
+      </div>
+		
+		
+				<!--************************** ADD WISH STEP 2*********************** -->
+		
+		
+<div class="page cached" data-page="addstep2">
+
+<!-- Top Navbar-->
+<div class="navbar">
+	<div class="navbar-inner">
+	  <div class="center"><b>CREA WISH</b></div>
+	</div>
+</div>
+<!-- /End of Top Navbar-->
+ 
+ </br></br>
+<div class="page-content">
+	
+
+<form>
+						
+<div class="list-block">
+
+<ul>
+
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">ticket</i></div>
+        <div class="item-inner">
+          <div class="item-title label">Titolo</div>
+          <div class="item-input">
+            <input type="text" id="titolo" >
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">book</i></div>
+        <div class="item-inner">
+          <div class="item-title label">Descrizione</div>
+          <div class="item-input">
+           <textarea id="descrizione" class="resizable"></textarea>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+	
+	     <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">money_euro</i></div>
+        <div class="item-inner">
+          <div class="item-title label">Prezzo</div>
+          <div class="item-input">
+            <input type="number" id="prezzo">
+          </div>
+        </div>
+      </div>
+    </li>
+		<li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">compose</i></div>
+        <div class="item-inner">
+          <div class="item-title label">Categoria</div>
+          <div class="item-input">
+ <select id="categoria">
+	<option value="Abbigliamento Bambino">Abbigliamento Bambino</option>
+	<option value="Abbigliamento Donna">Abbigliamento Donna</option>
+	<option value="Abbigliamento Uomo">Abbigliamento Uomo</option>
+	<option value="Accessori Donna">Accessori Donna</option>
+	<option value="Accessori Uomo">Accessori Uomo</option>
+	<option value="Animali">Animali</option>
+	<option value="Arredamento">Arredamento</option>
+	<option value="Auto e Moto">Auto e Moto</option>
+	<option value="Beneficenza">Beneficenza</option>
+	<option value="Benessere e Salute">Benessere e Salute</option>
+	<option value="Elettrodomestici">Elettrodomestici</option>
+	<option value="Elettronica e Informatica">Elettronica e Informatica</option>
+	<option value="Esperienze">Esperienze</option>
+	<option value="Eventi,Concerti,Spettacoli e Mostre">Eventi,Concerti,Spettacoli e Mostre</option>
+	<option value="Foto e Video">Foto e Video</option>
+	<option value="Gastronomia">Gastronomia</option>
+	<option value="Hobby">Hobby</option>
+	<option value="Lezioni e Corsi">Lezioni e Corsi</option>
+	<option value="Libri e Riviste">Libri e Riviste</option>
+	<option value="Makeup">Makeup</option>
+	<option value="Musica">Musica</option>
+	<option value="Nerd">Nerd</option>
+	<option value="Scarpe Donna">Scarpe Donna</option>
+	<option value="Scarpe Uomo">Scarpe Uomo</option>
+	<option value="Speciali">Speciali</option>
+</select>
+			
+          </div>
+        </div>
+      </div>
+    </li>
+	<li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">tags</i></div>
+        <div class="item-inner">
+          <div class="item-title label">Tag</div>
+          <div class="item-input">
+            <input type="text" id="tag" >
+          </div>
+        </div>
+      </div>
+    </li>
+
+</ul>
+</div>
+</form>
+<center>
+<div class="row-progress">		
+<ul>
+<li><a href="#addwish"> <i class="icon f7-icons">left</i> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>2/6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>     
+<li><a onclick="goStep3();" > <i class="icon f7-icons">right</i> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>
+
+</ul>
+</div>
+</center>
+         
+            
+   
+ </div>
+</div>
+		
+		
+		
+
+
+				<!--************************** ADD WISH STEP 2*********************** -->
+		
+		
+<div class="page cached" data-page="addstep3">
+
+<!-- Top Navbar-->
+<div class="navbar">
+	<div class="navbar-inner">
+	  <div class="center"><b>CREA WISH</b></div>
+	</div>
+</div>
+<!-- /End of Top Navbar-->
+ 
+ </br></br>
+<div class="page-content">
+	
+
+<center>
+
+</br></br></br>
+<h1>Inserisci In</h1>
+</br></br></br></br>
+<a href="#listWishlist"><img src="img/wishlist.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/giftbox.png" />
+
+
+</center>
+         
+            
+   
+ </div>
+ </div>
+
+		<!--************************** LIST SELECT WISHLIST*********************** -->
+		
+<div class="page cached" data-page="listWishlist">
+
+<!-- Top Navbar-->
+<div class="navbar">
+	<div class="navbar-inner">
+	  <div class="center"><b>CREA WISH</b></div>
+	</div>
+</div>
+<!-- /End of Top Navbar-->
+ 
+ </br></br>
+
+<div class="page-content">
+
+<center><br/>
+<img src="img/wishlist.png" width="100"/><br/>
+<h1>Scegli wishlist</h1>
+<h3>scegline o creane una nuova:</h3>
+
+
+<table>
+<tr>
+<td><a href="#creawishlist"><img src="img/plus.png"/></a></td><td><a href="#creawishlist"><h2>&nbsp;&nbsp;Crea una nuova wishlist</h2></a></td>
+</tr>
+</table>
+
+<div class="list-block">
+  <ul>
+    
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">favorites</i></div>
+        <div class="item-inner">
+          <div class="item-title label"><b>Wishlist</b></div>
+          <div class="item-input">
+              <select id="wishlist">
+
+</select>
+          </div>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</div>   
+
+</br>
+ <a href="#" onclick="selectWishlist();" class="button button-fill color-orange">Seleziona</a>
+
+
+</center>
+         
+            
+   
+ </div>
+ </div>
+		
+				<!--************************** CREA WISHLIST*********************** -->
+		
+<div class="page cached" data-page="creawishlist">
+
+<!-- Top Navbar-->
+<div class="navbar">
+	<div class="navbar-inner">
+	  <div class="center"><b>CREA WISHLIST</b></div>
+	</div>
+</div>
+<!-- /End of Top Navbar-->
+ 
+ </br></br>
+
+<div class="page-content">
+
+<center>
+
+<form>
+						
+<div class="list-block">
+
+<ul>
+
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">ticket</i></div>
+        <div class="item-inner">
+          <div class="item-title label">Titolo</div>
+          <div class="item-input">
+            <input type="text" id="titolowish" >
+          </div>
+        </div>
+      </div>
+    </li>
+
+
+		<li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">eye</i></div>
+        <div class="item-inner">
+          <div class="item-title label">Visibilit&agrave;</div>
+		  
+          <div class="item-input">
+ <select id="visibilita">
+	<option value="Abbigliamento Bambino">Pubblica</option>
+	<option value="Abbigliamento Donna">Privata</option>
+</select>		
+          </div>
+        </div>
+		
+      </div>
+    </li>
+
+</ul>
+</div>
+</form>
+
+ <a href="#" onclick="creaWishlist();" class="button button-fill color-orange">Aggiungi</a>
+</center>
+         
+            
+   
+ </div>
+ </div>
+		
+		
+		
+					<!--************************** RIASSUNTO WISH *********************** -->
+		
+<div class="page cached" data-page="reviewish">
+
+
+<div class="page-content">
+<center>
+
+<h3>CREA WISH</h3>
+
+<img id ="img_camPH_r" border="1" width="100%" style="width:100%;max-height:200px;height: expression(this.height > 200 ? 200: true);"/>
+<div class="riassunto">
+<p id="ptitolo"></p>
+<hr/>
+<p id="pcategoria"></p>
+<hr/>
+<p id="pwishscelta"></p>
+<hr/>
+<p id="pdescrizione"></p>
+<hr/>
+<p id="pprezzo"></p>
+<hr/>
+<p id="ptags"></p>
+</div>
+
+ <a href="#" onclick="creaWish();" class="button  button-fill color-orange">SALVA</a> <a href="#" onclick="annullaWish();" class="button button-fill  color-orange">ANNULLA</a> 
+</center>
+         
+            
+   
+ </div>
+ </div>	
+		
+
+
+
+		<!--************************** Lista wish *********************** -->
+			
+			<div  class="page cached" data-page="listawish">
+           
+
+          <div   class="page-content">
+			<div  class="row-full-w">
+			<ul>
+				<li><a href="#listawish">  WISH </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>     
+				<li><a href="#listawishlist" >  WISHLIST </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </li>
+				<li><a href="#tab4" >   LISTE </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			</ul>
+			</div>
+		  
+		  <div class="content-block-title">
+		  </br></br></br>
+
+			<center>
+			<h2>i tuoi Wish</h2>
+			</div>
+			
+			 <div class="content-block" id="contentmain">
+   
+			</div>
+			
+			</center>
+			
+			
+			
+			
+		  
+            
+			
+			
+			<div  class="row-full">
+			<center>
+			<ul>
+				<li><a href="#inside"><i class="f7-icons size-29 active">home</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href ="#addwish">  <i class="f7-icons size-29">add_round</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>     
+				<li><a href="#tab3" ><i class="f7-icons size-29">bell</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="#tab4" ><i class="f7-icons size-29">person</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>		
+			</ul>
+			</center>
+			</div>
+			
+</div>
+          
+  
+   
+        </div>
+		
+		
+		
+
+<!--************************** Lista wishlist *********************** -->
+			
+			<div  class="page cached" data-page="listawishlist">
+           
+
+          <div   class="page-content">
+			<div  class="row-full-w">
+			<ul>
+				<li><a href="#listawish">  WISH </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>     
+				<li><a href="#listawishlist" class="active" >  WISHLIST </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </li>
+				<li><a href="#tab4" >   LISTE </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			</ul>
+			</div>
+		  
+		  <div class="content-block-title">
+		  </br></br></br>
+
+			<center>
+			<h2>Le tue Wishlist</h2>
+			</div>
+			
+			 <div class="content-block" id="contentmainlist">
+   
+			</div>
+			
+			</center>
+			
+			
+			
+			
+		  
+            
+			
+			
+			<div  class="row-full">
+			<center>
+			<ul>
+				<li><a href="#inside" ><i class="f7-icons size-29 active">home</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href ="#addwish">  <i class="f7-icons size-29">add_round</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>     
+				<li><a href="#tab3" ><i class="f7-icons size-29">bell</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="#tab4" ><i class="f7-icons size-29">person</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>		
+			</ul>
+			</center>
+			</div>
+			
+</div>
+          
+  
+   
+        </div>		
+
+
+
+			
+				
+			
+							</div>
+					</div>			
+			</div>			
+				
+
+
+				
+				
+
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+function login() {
+	if(user.exist($("#userlogin").val(),$("#pswlogin").val())) {
+		mainView.router.load({pageName: 'inside'});
+	}
+}
+
+function registrati() {
+	user.data.username = $("#user").val();
+	user.data.password = $("#psw").val();
+	user.data.mail = $("#email").val();
+    user.save();   
+	mainView.router.load({pageName: 'inside'});
+
+}
+
+function annullaWish() {
+	window.sessionStorage.clear();
+	mainView.router.load({pageName: 'inside'});
+}
+
+function creaWish() {
+
+	wish.data.titolo = window.sessionStorage.getItem("titolo");
+    wish.data.categoria = window.sessionStorage.getItem("categoria");  
+	wish.data.wishlist = window.sessionStorage.getItem("wishlist");  
+	wish.data.prezzo = window.sessionStorage.getItem("prezzo"); 
+	wish.data.descrizione = window.sessionStorage.getItem("descrizione"); 
+	wish.data.tag = window.sessionStorage.getItem("tag"); 
+	wish.data.img = window.sessionStorage.getItem("img"); 
+	wish.data.tipo = "wish";  
+    wish.save();   
+	mainView.router.load({pageName: 'inside'});
+}
+
+
+
+
+function selectWishlist() {
+	window.sessionStorage.setItem("wishlist", $( "#wishlist" ).val());
+	mainView.router.load({pageName: 'reviewish'});
+}
+
+
+function creaWishlist() {
+	wishlist.data.titolo = $("#titolowish").val();
+    wishlist.data.visibilita = $("#visibilita").val();  
+	wishlist.data.tipo = "wishlist";  
+    wishlist.save();
+	mainView.router.load({pageName: 'listWishlist'});
+		}
+
+
+
+function goStep3() {
+			window.sessionStorage.setItem("titolo", $( "#titolo" ).val()); //Set item;
+			window.sessionStorage.setItem("descrizione", $( "#descrizione" ).val()); //Set item;
+			window.sessionStorage.setItem("prezzo", $( "#prezzo" ).val()); //Set item;
+			window.sessionStorage.setItem("tag", $( "#tag" ).val()); //Set item;
+			window.sessionStorage.setItem("categoria", $( "#categoria" ).val()); //Set item;
+		
+			
+			mainView.router.load({pageName: 'addstep3'});
+		}
+		
+		
+		
+		function acceptImage() {
+		
+			window.sessionStorage.setItem("img", $('#img_camPH').attr('src')); 
+			
+			
+			mainView.router.load({pageName: 'addstep2'});
+		}
+
+			$("#btn_accept").hide();
+			$("#btn_refuse").hide();
+			
+	$(function(){ 
+	
+		
+	
+		function camSuccess(imgData) {
+		
+			
+			$("#btn_library").hide();
+			$("#btn_camera").hide();
+			$("#btn_flash").hide();
+			$("#btn_accept").show();
+			$("#btn_refuse").show();
+			
+			
+
+			
+
+		
+		
+var newFileName=Math.random().toString(36).substr(2, 5)+'.jpg';        
+        window.resolveLocalFileSystemURL(imgData, function (fileEntry) {
+            window.resolveLocalFileSystemURL("file:///storage/emulated/0/Android/data/com.adobe.phonegap.app/files", function (dirEntry) {
+                    // move the file to a new directory and rename it
+                    fileEntry.moveTo(dirEntry, newFileName, function () {
+                     $("#img_camPH").attr("src","file:///storage/emulated/0/Android/data/com.adobe.phonegap.app/files/"+newFileName);
+                    },
+                    function (e) {
+                    alert('errore:'+e);
+                    });
+                },
+                function (e) {
+                alert('errore 2'+e.code);
+                });
+
+        },
+        function (e){ 
+            console.log(e);
+        });
+		
+
+		
+        }
+			
+
+		
+		
+		
+		function refuseImage() {
+			$("#img_camPH").attr("src","");
+			$("#btn_library").show();
+			$("#btn_camera").show();
+			$("#btn_flash").show();
+			$("#btn_accept").hide();
+			$("#btn_refuse").hide();
+		}
+		
+		
+		
+		function camError (error) {
+		 alert(error);
+		}
+		
+		function accessCamera(){
+			
+			var options = {
+				destinationType: Camera.DestinationType.FILE_URI,
+				sourceType : Camera.PictureSourceType.CAMERA,
+				saveToPhotoAlbum: true
+			};
+			sessionStorage.clear();
+			navigator.camera.getPicture(camSuccess,camError,options);
+		}
+		
+		
+		function accessLibrary(){
+			
+			var options = {
+				destinationType: Camera.DestinationType.FILE_URI,
+				sourceType : Camera.PictureSourceType.PHOTOLIBRARY
+			};
+			
+			navigator.camera.getPicture(camSuccess,camError,options);
+		}
+		
+function flashOn(){		
+window.flashlight.available(function(isAvailable) {
+  if (isAvailable) {
+
+    // switch on
+    window.flashlight.switchOn(
+      function() {}, // optional success callback
+      function() {}, // optional error callback
+      {intensity: 1} // optional as well
+    );
+
+    // switch off after 3 seconds
+    setTimeout(function() {
+      window.flashlight.switchOff(); // success/error callbacks may be passed
+    }, 3000);
+
+  } else {
+    alert("Flashlight not available on this device");
+  }
+});
+		}
+		
+		
+	$("#btn_camera").on("click",accessCamera);
+	$("#btn_library").on("click",accessLibrary);
+	$("#btn_flash").on("click",flashOn);
+	$("#btn_refuse").on("click",refuseImage);
+	$("#btn_accept").on("click",acceptImage);
+	 });
+	
+			</script>
+		
+
+		
+
+</body>
+
+</html>
